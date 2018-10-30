@@ -1,0 +1,605 @@
+header {
+	height: 190px;
+	background: url(../img/shop-bg.0391dd.jpg) no-repeat;
+}
+
+.header_nav {
+	height: 48px;
+	background: rgb(0, 0, 0, 0.5);
+}
+
+.nav_left>li,
+.nav_right>li {
+	float: left;
+}
+
+.nav_left>li,
+.nav_right>li {
+	line-height: 48px;
+}
+
+.nav_left>li>a {
+	color: #fff;
+	padding: 0 35px;
+}
+
+.nav_right>li>a {
+	color: #ccc;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.nav_left {
+	width: 800px;
+}
+
+.nav_box {
+	display: flex;
+}
+
+.nav_left .logo {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.nav_left .logo a>i {
+	font-size: 33px;
+}
+
+.nav_right .user a {
+	margin-left: 28px;
+	color: #fff;
+}
+
+.seller {
+	height: 142px;
+}
+
+.seller_name {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.seller_name .star {
+	color: #FFC30C;
+	font-size: 14px;
+}
+
+.seller_name .name {
+	font-size: 20px;
+}
+
+.seller_name .star i {
+	font-size: 14px;
+}
+
+.seller_info {
+	padding: 19px 0;
+	display: inline-block;
+	width: 627px;
+}
+
+.seller_info img {
+	vertical-align: middle;
+	border-radius: 100%;
+	border: 5px solid #7A6B61;
+}
+
+.other_info {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.other_info ul>li {
+	float: left;
+	width: 154px;
+	text-align: center;
+	color: #fff;
+}
+
+.other_info .pricestart {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.other_info .price {
+	font-size: 18px;
+}
+
+.shopnav {
+	/*height: 59px;*/
+	line-height: 59px;
+	background: #fff;
+}
+
+.shopnav .nav {
+	/*width: 885px;*/
+	height: 59px;
+	flex: 1;
+}
+
+.shopnav .search {
+	height: 59px;
+	width: 285px;
+}
+
+.shopnav .nav li {
+	padding-left: 20px;
+	height: 59px;
+	line-height: 59px;
+}
+
+.shopnav .nav li a {
+	padding-right: 20px;
+	color: #111;
+}
+
+.active {
+	color: #0089DC !important;
+}
+
+.shopnav .nav_fr li {
+	padding: 0 15px;
+	font-size: 14px;
+}
+
+.shopnav .nav_fr li a {
+	color: #111;
+	font-size: 15px;
+}
+
+.shopnav .nav_fr li {
+	color: #111;
+}
+
+.shopnav .nav_fr {
+	flex: 1;
+}
+
+.shopnav .nav_box {
+	width: 885px;
+	display: flex;
+}
+
+.nav_fr .icon a span i:nth-child(1) {
+	padding: 8px;
+	background: #0089DC;
+	color: #fff;
+}
+
+.nav_fr .icon a span i:nth-child(2) {
+	padding: 7px;
+	background: #fff;
+	color: #7d7878;
+	border: 1px solid #ccc;
+}
+
+.search {
+	position: relative;
+}
+
+.search i {
+	position: absolute;
+	right: 36px;
+	top: 4px;
+	color: #8d8686;
+}
+
+.search input {
+	width: 264px;
+	height: 32px;
+	text-indent: 10px;
+	outline: none;
+	margin-left: 20px;
+}
+
+.nav_fr .item a i {
+	padding: 0 5px;
+	font-size: 14px;
+	color: #9c9a9a;
+}
+
+.wid885 {
+	width: 885px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.wid278 {
+	width: 278px;
+}
+
+.shopmain .shopnav ul>li {
+	width: 132px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	margin: 5px 5px;
+	border-radius: 3px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.shopmain .shopnav ul>li:hover {
+	background: #eee;
+}
+
+.shopmain .shopnav ul>li a {
+	color: #333;
+}
+
+.bg {
+	background: #0089DC !important;
+	/*color: #fff !important;*/
+}
+
+.font_col {
+	color: #fff;
+}
+
+@media only screen and (max-width: 1500px) {
+	.shopmain .shopmain_left .shopnav.fix {
+		display: block;
+		position: fixed;
+		top: 0;
+		width: 848px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.shopmain .shopmain_left .shopnav.fix {
+		display: none;
+	}
+}
+
+.col {
+	color: #fff !important;
+}
+
+.shopnav .shopnav_box {
+	border: 1px solid #eee;
+	padding: 0 20px;
+	background: #fff;
+	margin-top: 15px;
+}
+
+.shopmain {
+	background: #F7F7F7;
+}
+
+.shopmain .shopnav {
+	background: #F7F7F7;
+	;
+}
+
+.itemslist .item>a>img {
+	vertical-align: middle;
+	width: 110px;
+	height: 110px;
+}
+
+.itemslist .item .food_info {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 12px;
+	width: 274px;
+	padding-bottom: 10px;
+}
+
+.shoplist {
+	/*margin: 20px 0 0 0;*/
+}
+
+.shoplist>h3 {
+	margin-top: 20px;
+}
+
+.shoplist .item {
+	float: left;
+	width: 410px;
+	border: 1px solid #eee;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+.shoplist .itemslist {
+	margin-top: 10px;
+}
+
+.shoplist .item:nth-child(odd) {
+	margin-right: 20px;
+}
+
+.shoplist .type {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.shoplist .desc {
+	font-size: 14px;
+	color: #999;
+	padding-left: 10px;
+	font-weight: 400;
+}
+
+.food_info .name {}
+
+.food_info p>i {
+	font-size: 12px;
+	color: #FFC30C;
+}
+
+.food_info .description {
+	color: #999;
+}
+
+.food_info .price a {
+	padding: 6px 15px;
+	color: #fff;
+	background: #0089DC;
+	border-radius: 15px;
+	float: right;
+}
+
+.food_info .price span {
+	color: #F84342;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.food_info p {
+	padding: 3px 0;
+}
+
+.food_info .sellCount {
+	color: #999;
+}
+
+.shopcar {
+	width: 320px;
+	/* padding: 0 10px; */
+	border-top: 2px solid #0089DC;
+	box-shadow: -1px 1px 1px #E3E3E3;
+}
+
+.car_header .car {
+	color: #0089DC;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.car_header {
+	/* height: 45px; */
+	line-height: 45px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	padding: 0 10px;
+	background: #FAFAFA;
+}
+
+.box {
+	cursor: pointer;
+	width: 189px;
+	padding: 0 5px;
+	background: #2C2C2C;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	/* box-sizing: border-box; */
+}
+
+.shopcar {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.shopcar .foodlist {
+	padding: 0 10px;
+	background: #fff;
+}
+
+.shopcar .foodlist li {
+	background: #fff;
+	height: 45px;
+	line-height: 45px;
+}
+
+.shopcar .foodlist .name {
+	width: 169px;
+	display: inline-block;
+	height: 45px;
+	overflow: hidden;
+	vertical-align: middle;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #666;
+}
+
+.shopnav .shopnav_box ul>li {
+	float: left;
+}
+
+.money span.foodnum {
+	color: #F02028;
+}
+
+.shopcar .foodlist input[type="button"] {
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	outline: navajowhite;
+	border: 1px solid #ddd;
+	margin: 0 -5px;
+	cursor: pointer;
+}
+
+.shopcar .foodlist input[type="text"] {
+	width: 30px;
+	height: 18px;
+	text-align: center;
+	border: 1px solid #ddd;
+	outline: none;
+}
+
+.shopcar .foodlist .price {
+	color: #F17530;
+	font-size: 14px;
+	width: 38px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.addToCar {
+	background: #fff !important;
+}
+
+.addToCar input[class='minus'] {
+	width: 27px;
+	height: 26px;
+	border: 1px solid #ddd;
+	border-radius: 27px 0 0 27px;
+	background: #eee;
+	outline: none;
+	cursor: pointer
+}
+
+.addToCar input[class='plus'] {
+	width: 27px;
+	height: 26px;
+	border: 1px solid #ccc;
+	border-radius: 0 27px 27px 0;
+	background: #eee;
+	outline: none;
+	cursor: pointer
+}
+
+.addToCar input[type='text'] {
+	outline: none;
+	height: 24px;
+	width: 32px;
+	margin: 0 -1px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.addToCar {
+	display: none;
+}
+
+.box {
+	padding: 0 4px;
+	background: #2C2C2C;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	width: 190px;
+}
+
+.box>i {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.box .money {
+	font-size: 25px;
+}
+
+.box .tips {
+	font-size: 12px;
+	color: #aaa;
+}
+
+.shopcar .money .state {
+	background: #E4E4E4;
+	font-size: 14px;
+	/* display: block; */
+	padding: 15px 26px;
+}
+
+@media only screen and (min-width: 1500px) {
+	#sidenav {
+		display: none;
+		position: fixed;
+		top: 0;
+		margin-left: -199px;
+		text-align: right;
+		width: 185px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		/* height: 40px; */
+		line-height: 55px;
+		font-size: 12px;
+		/* height: 519px; */
+		border-right: 1px solid #ccc;
+	}
+}
+
+#sidenav::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+	/*background-color: rgba(0, 0, 0, .26);*/
+}
+
+#sidenav::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .26);
+}
+
+@media only screen and (max-width:1449px) {
+	#sidenav {
+		display: none;
+	}
+}
+
+#sidenav ::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+	/*background-color: rgba(0, 0, 0, .26);*/
+}
+
+#sidenav ::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .26);
+}
+
+@media only screen and (max-width: 1449px) {
+	#sidenav {
+		display: none !important;
+	}
+}
+
+#sidenav li a.font_blue {
+	color: #0089DC;
+	font-size: 14px;
+}
+
+#sidenav a {
+	/*color: #0089DC;*/
+	color: #333;
+	position: relative;
+	padding: 0 16px;
+}
+
+#sidenav li a:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	margin-top: -4px;
+	width: 4px;
+	height: 4px;
+	background-color: #ddd;
+	border: 2px solid #f7f7f7;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+}
+
+#sidenav li a i {
+	color: #0089DC;
+	display: none;
+	padding-left: 6px;
+}

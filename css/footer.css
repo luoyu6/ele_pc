@@ -1,0 +1,206 @@
+				/***<!----footer start---->	***/
+				
+				.footer {
+					background: #fafafa;
+				}
+				
+				.footer .u_footer {
+					width: 1170px;
+					height: 80px;
+					border-bottom: 1px solid #dfdfdf;
+					margin: 0 auto;
+				}
+				
+				.footer .u_footer li {
+					width: 237px;
+					height: 160px;
+					text-align: center;
+					float: left;
+				}
+				
+				.footer .u_footer li .a_f_txt {
+					display: block;
+					color: #6d6d6d;
+					line-height: 36px;
+					margin-top: 40px;
+				}
+				
+				.footer .u_footer li .a_f_txt .i_f_font {
+					font-size: 30px;
+				}
+				
+				.footer .u_footer li .a_f_txt p {
+					font-size: 18px;
+					color: #111;
+				}
+				
+				.footer .u_footer li .i_f_font:hover {
+					color: #ff4a00;
+				}
+				
+				.footer .d_footer {
+					box-sizing: border-box;
+					width: 1170px;
+					height: 200px;
+					border-bottom: 1px solid #dfdfdf;
+					margin: 0 auto;
+				}
+				
+				.footer .d_footer dl {
+					height: 125px;
+					width: 165px;
+					border-right: 1px solid #dfdfdf;
+					margin-top: 40px;
+					float: left;
+					margin-right: 30px;
+				}
+				
+				.footer .d_footer dl dt {
+					font-size: 20px;
+					color: #333;
+					margin-bottom: 10px;
+				}
+				
+				.footer .d_footer dl dd {
+					margin: 5px 0px;
+					font-size: 14px;
+					color: #6d6d6d;
+				}
+				
+				.footer .d_footer dl dd a {
+					color: #6d6d6d;
+				}
+				
+				.footer .d_footer dl dd a:hover {
+					color: #ff4a00;
+				}
+				
+				.footer .d_footer dl.d_d_last {
+					text-align: center;
+					    margin-right: 89px;
+					width: 200px;
+					border-right: 0px;
+				}
+				
+				.footer .d_footer dl.d_d_last dt {
+					font-size: 26px;
+					color: #000;
+					margin-bottom: 5px;
+				}
+				
+				.footer .d_footer dl.d_d_last dd {
+					margin: 0px;
+				}
+				
+				.footer .d_footer dl.d_d_last .a_btn {
+					display: inline-block;
+					width: 120px;
+					height: 30px;
+					background: #ff4a00;
+					color: #fff;
+					margin-top: 15px;
+					font-size: 12px;
+					line-height: 30px;
+				}
+				
+				.footer .d_footer dl.d_d_last .a_btn:hover {
+					background: #EE330A;
+				}
+				
+				.footer .gg {
+					width: 1170px;
+					margin: 40px auto 0;
+					text-align: center;
+					background: #f7f7f7;
+				}
+				
+				.footer .gg p {
+					font-size: 10px;
+					color: #333;
+				}
+				
+				.footer .gg p a {
+					color: #333;
+				}
+				
+				.footer .gg .p_pic a {
+					border-right: 1px solid #333;
+					margin: 0px -3px 5px -3px;
+					display: inline-block;
+					padding: 0px 5px;
+					line-height: 13px;
+				}
+				
+				.footer .gg .p_pic a:last-child {
+					border: 0px;
+				}
+				
+				.footer .gg a:hover {
+					color: #ff4a00;
+				}
+				
+				.footer .gg .f_pic {
+					height: 40px;
+					margin-top: 10px;
+					position: relative;
+				}
+				
+				.footer .gg .f_pic .p_a {
+					display: inline-block;
+					margin-top: 10px;
+				}
+				
+				.footer .gg .f_pic .u_input {
+					width: 180px;
+					background: #fff;
+					border: 1px solid #dfdfdf;
+					left: 720px;
+					top: 0px;
+					position: absolute;
+				}
+				
+				.footer .gg .f_pic .u_input li {
+					line-height: 36px;
+					height: 39px;
+					text-align: left;
+					padding: 0px 10px;
+					display: none;
+				}
+				
+				.footer .gg .f_pic .u_input .li_sel {
+					display: block;
+				}
+				
+				.footer .gg .f_pic .u_input:hover {
+					top: -351px;
+				}
+				
+				.footer .gg .f_pic .u_input:hover li {
+					display: block;
+				}
+				
+				.footer .gg .f_pic .u_input a {
+					font-size: 12px;
+					color: #8c8c8c;
+				}
+				
+				.footer .gg .f_pic .u_input a:hover {
+					color: #ff4a00;
+				}
+				
+				.footer .gg .f_pic .u_input .i_san {
+					background: url(../images/icon-arrow-down.png) no-repeat;
+					display: inline-block;
+					width: 11px;
+					height: 5px;
+					position: absolute;
+					right: 10px;
+					top: 15px;
+					z-index: 10;
+				}
+				
+				.footer .gg .f_pic .u_input:hover .i_san {
+					background-position: 0 -5px;
+					top: 366px;
+				}
+				/***<!----footer start---->	***/
