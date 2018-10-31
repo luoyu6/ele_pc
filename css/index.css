@@ -1,3 +1,7 @@
+body {
+	min-width: 1170px;
+}
+
 header {
 	height: 190px;
 	background: url(../img/shop-bg.0391dd.jpg) no-repeat;
@@ -191,7 +195,7 @@ header {
 	height: 32px;
 	text-indent: 10px;
 	outline: none;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .nav_fr .item a i {
@@ -199,7 +203,43 @@ header {
 	font-size: 14px;
 	color: #9c9a9a;
 }
-
+.tips .explain{
+	padding: 10px 15px;
+	background: #fff;
+}
+.tips .explain_title{
+	padding: 10px;
+}
+.tips .tips_h3{
+	margin-bottom: 2px;
+	font-size: 14px;
+	font-weight: 400px;
+}
+.tips .tips_p{
+	font-size: 14px;
+	color: #333;
+}
+.tips .explain>p>i{
+	font-size: 26px;
+	vertical-align: middle;
+}
+.tips .explain p{
+	    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.tips>a{
+	display: block;
+	color: #333;
+	font-size: 18px;
+	padding: 10px 0;
+	text-align: center;
+	border: none;
+	border-top:1px solid #eee ;
+	border-bottom:1px solid #ddd ;
+	background: #fff;
+	box-shadow: 0 1px 3px #eee;
+}
 .wid885 {
 	width: 885px;
 	padding: 0 20px;
@@ -266,11 +306,30 @@ header {
 
 .shopmain {
 	background: #F7F7F7;
+	padding-bottom: 40px;
 }
 
 .shopmain .shopnav {
 	background: #F7F7F7;
-	;
+}
+
+.tips .title {
+	height: 40px;
+    line-height: 40px;
+    background: #0089DC;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+    margin-top: 16px;
+}
+
+.tips .content {
+	line-height: 28px;
+	padding: 10px 17px 10px 10px;
+	background: #fff;
+	font-size: 14px;
+	color: #333;
 }
 
 .itemslist .item>a>img {

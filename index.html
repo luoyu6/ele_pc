@@ -197,8 +197,24 @@
 				</div>
 
 				<div class="tips wid278 fl">
-					收藏本店 优先配送】点击右侧商家按键，进入商家详情点击右上角❤，收藏本店，我们将优先配送您的订单。请关注本店活动变化，更有意外惊喜哦！！！ 1. 本店使用饿了么网上订餐，优先配送！ 2. 提前1小时预定，用餐更及时！3. 服务电话请拨打饿了么客服：1010 5757。
+					<h1 class="title">商家公告</h1>
+
+					<p class="content">
+						【收藏本店 优先配送】点击右侧商家按键，进入商家详情点击右上角❤，收藏本店，我们将优先配送您的订单。请关注本店活动变化，更有意外惊喜哦！！！ 1. 本店使用饿了么网上订餐，优先配送！ 2. 提前1小时预定，用餐更及时！3. 服务电话请拨打饿了么客服：1010 5757。
+					</p>
+					<div class="explain_title">
+						<h3 class="tips_h3">配送说明：</h3>
+						<p class="tips_p">夜间配送费¥4.5</p>
+					</div>
+					<div class="explain">
+						<p><i class="iconfont icon-bao"></i>该商户食品安全已由国泰产险承担，食品安全有保障</p>
+						<p><i class="iconfont icon-piao"></i>该商家支持开发票，开票订单金额50元起，请在下单时填写好发票抬头</p>
+
+					</div>
+						<a href="javascript:;">举报商家</a>
+					
 				</div>
+			</div>
 
 			</div>
 			<section>
@@ -359,11 +375,31 @@
 	<script src="fly/jquery.fly.js"></script>
 
 	<script type="text/javascript">
-		console.log($(window).height());
 		$(function() {
-			//			var top = $('.shopmain .shopmain_left .shopnav').offset().top;  //265
+			$(window).resize(function() {
+				var hei;
+				var num = $(window).height() - $('.footer').height();
+				var win_hei = $(window).height();
+				var footer_hei = $('.footer').height();
+
+				var fh = $(window).scrollTop() - $(window).height();
+				var h1 = $('.footer').offset().top - $(window).scrollTop();
+				var h2 = $('.footer').height();
+
+				if(win_hei < footer_hei) {
+					//					alert(1)
+					$('#sidenav').css({
+						'height': win_hei
+					});
+				}
+
+				console.log(win_hei + "==" + footer_hei)
+
+			})
+		})
+
+		$(function() {
 			$(window).scroll(function(event) {
-				//				console.log($(window).height() + "=====" + $(document).height());
 				var scrollTop = $(window).scrollTop();
 				var wid = $(window).width();
 				var len = $("#shoplist .itemslist").length;
@@ -383,15 +419,15 @@
 
 				}
 
-				/*if($(window).scrollTop() > $("#shoplist .itemslist").eq(len - 2).offset().top) {
+				if($(window).scrollTop() > $(".footer").offset().top) {
 					$('#sidenav').css({
-						'height': '420px'
+						'height': $(".footer").offset().top - $(window).scrollTop()
 					});
 				} else {
 					$('#sidenav').css({
 						'height': 'auto'
 					});
-				}*/
+				}
 
 				/*if($(window).scrollTop() > $('.footer').offset().top) {
 					$('#sidenav').css({
@@ -414,10 +450,10 @@
 				});
 
 			});
+
 			//点击顶部导航
 			$('.shopnav .shopnav_box li ').click(function() {
 				var i = $(this).index();
-
 				$(this).eq(i).addClass("bg").find('a').addClass('col').parent('li').siblings().removeClass("bg").find('a').removeClass('col');
 				clickNavBar(i, 180);
 			})
@@ -430,13 +466,14 @@
 			})
 
 		});
-		//点击导航
+
 		function clickNavBar(index, num) {
 			var _top = $("#shoplist").find('.itemslist').eq(index).offset().top;
 			$('html,body').stop(true, true).animate({
 				scrollTop: _top - num
 			}, 500);
 		}
+
 		//清空购物车
 		$('.shopcar a').first().click(function() {
 			$(this).parents('.car_header ').next('.foodlist').empty();
@@ -491,7 +528,6 @@
 
 		//显示食物列表 end
 
-		//商品列表-灰色按钮-加入购物车
 		//商品减少数量--灰色按钮 
 		function minus(obj) {
 			//			alert(1)
@@ -523,9 +559,7 @@
 			//计算总价 end
 
 		}
-		//商品减少数量--灰色按钮 end
 		//商品增加数量--灰色按钮
-
 		function plus(obj, e) {
 			var foodId = $(obj).parents('li').attr('foodId');
 			var food = $('.foodlist').find('li[cid="' + foodId + '"]').html(); //购物车里的li
@@ -548,40 +582,44 @@
 			$('.shopcar span.money ').text('￥' + total);
 			//计算总价 end
 
-			//飞入动画 start
-			flyAnimate(e)
-			//飞入动画 end
+			//飞入动画 
+			flyAnimate(e, obj)
 
 		}
 
-		//商品增加数量--灰色按钮  end		
-		//商品列表-灰色按钮-加入购物车
-
-			//加入购物车飞入动画
-		function flyAnimate(e) {
+		//加入购物车飞入动画
+		function flyAnimate(e, obj) {
 			//飞入动画 start
 			var offset = $('.shopcar .money .box').offset();
 			//			console.log(offset.left+"---"+offset.top)
-			var top = $(window).height() - $('.shopcar .money .box').height(); //购物车相对窗口可视区域的top值
-			var left = $(window).width() - $('.shopcar .money').width(); //购物车相对窗口可视区域的left值
+			var car_top = $(window).height() - $('.shopcar .money .box').height(); //购物车相对窗口可视区域的top值
+			var car_left = $(window).width() - $('.shopcar .money').width(); //购物车相对窗口可视区域的left值
+			var hei = $(window).scrollTop();
 			//			var flyer = $(obj).clone();
 			//			flyer = $('<img class="" src="img/牛油果.png"/>');
-			flyer = $('<div style="width: 15px;height: 15px;border-radius:100%;background: #0089DC;"></div>');
-			var hei = $(window).scrollTop();
+			flyer = $('<div style="width: 20px;height: 20px;border-radius:100%;background: #0089DC;position: absolute;z-index: 3;"></div>');
+
 			flyer.fly({
 				start: {
 					left: e.pageX,
 					top: e.pageY - hei
 				},
 				end: {
-					left: left,
-					top: top,
-					width: 15,
-					height: 15
+					left: car_left + 20,
+					top: car_top,
+					width: 20,
+					height: 20
+				},
+
+				speed: 2, //越大越快，默认1.2
+				vertex_Rtop: 300, //运动轨迹最高点top值，默认20
+				onEnd: function() {
+					flyer.remove();
+
 				}
 
 			});
-			//飞入动画 end
+
 		}
 
 		function foodNumPlus() {
@@ -684,7 +722,7 @@
 			$('.shopcar span.money ').text('￥' + total);
 			//			console.log( total)
 			//计算总价 end
-			
+
 			//加入购物车飞入动画			
 			flyAnimate(e);
 		}

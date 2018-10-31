@@ -1,13 +1,14 @@
 				/***<!----footer start---->	***/
 				
 				.footer {
-					background: #fafafa;
+					background: #F7F7F7;
+					border-top: 1px solid #dfdfdf;
+
 				}
 				
 				.footer .u_footer {
 					width: 1170px;
 					height: 80px;
-					border-bottom: 1px solid #dfdfdf;
 					margin: 0 auto;
 				}
 				
@@ -44,6 +45,8 @@
 					height: 200px;
 					border-bottom: 1px solid #dfdfdf;
 					margin: 0 auto;
+					padding: 0 20px;
+					box-sizing: border-box;
 				}
 				
 				.footer .d_footer dl {
@@ -77,7 +80,7 @@
 				
 				.footer .d_footer dl.d_d_last {
 					text-align: center;
-					    margin-right: 89px;
+					margin-right: 60px;
 					width: 200px;
 					border-right: 0px;
 				}
