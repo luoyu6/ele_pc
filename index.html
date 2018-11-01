@@ -6,7 +6,6 @@
 		<meta name="author" content="luoyu" />
 		<meta name="keywords" content="饿了么饿了么pc端响应式项目 响应式   js项目 jquety项目  CSS3项目demo" />
 		<link rel="icon" type="image/x-icon" href="img/0.png">
-		
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -250,9 +249,7 @@
 
 		<!----footer start---->
 		<div class="footer">
-			<ul class="u_footer">
 
-			</ul>
 			<div class="d_footer">
 
 				<dl>
@@ -468,9 +465,6 @@
 			})
 
 		});
-		
-		
-
 
 		function clickNavBar(index, num) {
 			var _top = $("#shoplist").find('.itemslist').eq(index).offset().top;
@@ -565,6 +559,8 @@
 
 		}
 		//商品增加数量--灰色按钮
+		var isClick = true;
+
 		function plus(obj, e) {
 			var foodId = $(obj).parents('li').attr('foodId');
 			var food = $('.foodlist').find('li[cid="' + foodId + '"]').html(); //购物车里的li
@@ -588,12 +584,31 @@
 			//计算总价 end
 
 			//飞入动画 
-			flyAnimate(e, obj)
+			/*if(isClick) {
+				isClick = false;
+				//定时器
+				setTimeout(function() {
+					isClick = true;
+				console.log(isClick);
+					
+				}, 500); //一秒内不能重复点击
+				flyAnimate(e);
+				
+
+				
+			}*/
+				
+				flyAnimate(e);
+			
+
+			
+
+
 
 		}
 
 		//加入购物车飞入动画
-		function flyAnimate(e, obj) {
+		function flyAnimate(e) {
 			//飞入动画 start
 			var offset = $('.shopcar .money .box').offset();
 			//			console.log(offset.left+"---"+offset.top)
