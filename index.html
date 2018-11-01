@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="author" content="luoyu" />
 		<meta name="keywords" content="饿了么饿了么pc端响应式项目 响应式   js项目 jquety项目  CSS3项目demo" />
+		<link rel="icon" type="image/x-icon" href="img/0.png">
+		
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -211,8 +213,8 @@
 						<p><i class="iconfont icon-piao"></i>该商家支持开发票，开票订单金额50元起，请在下单时填写好发票抬头</p>
 
 					</div>
-						<a href="javascript:;">举报商家</a>
-					
+					<a href="javascript:;">举报商家</a>
+
 				</div>
 			</div>
 
@@ -393,7 +395,7 @@
 					});
 				}
 
-				console.log(win_hei + "==" + footer_hei)
+				//				console.log(win_hei + "==" + footer_hei)
 
 			})
 		})
@@ -428,7 +430,7 @@
 						'height': 'auto'
 					});
 				}
-
+				console.log($(window).scrollTop() + "----" + $(".footer").offset().top)
 				/*if($(window).scrollTop() > $('.footer').offset().top) {
 					$('#sidenav').css({
 						'height': '170px'
@@ -466,6 +468,9 @@
 			})
 
 		});
+		
+		
+
 
 		function clickNavBar(index, num) {
 			var _top = $("#shoplist").find('.itemslist').eq(index).offset().top;
@@ -612,7 +617,7 @@
 				},
 
 				speed: 2, //越大越快，默认1.2
-				vertex_Rtop: 300, //运动轨迹最高点top值，默认20
+				vertex_Rtop: 400, //运动轨迹最高点top值，默认20
 				onEnd: function() {
 					flyer.remove();
 
